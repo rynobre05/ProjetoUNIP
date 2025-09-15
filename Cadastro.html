@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="Cadastro.css">
+</head>
+
+<body>
+    <!-- Barra de navegação -->
+    <nav>
+        <!-- Logo -->
+        <img src="IMG/img-LOGO-ESCOT.png" alt="Logo Escoteiros" width="50" height="50">
+        <div class="nav-links">
+            <a href="#">Home</a> |
+            <a href="QuemSomos.html ">Quem somos</a> |
+            <a href="#">Escotismo</a> |
+            <a href="#">Ramos</a> |
+            <a href="#">Nossas Atividades</a> |
+            <a href="Documento.html">Documentos</a> |
+            <a href="#">Empresas Amigas</a> |
+            <a href="#">Doe Agora</a> |
+            <a href="Contato.html">Contato</a> |
+        </div>
+        <div class="auth-buttons">
+            <a href="#" class="btn-login">Login</a>
+            <a href="Cadastro.html" class="btn-register">Cadastre-se</a>
+        </div>
+    </nav>
+    <h1 class="cadastrar-titulo">Cadastre-se</h1>
+
+    <main>
+        <div class="cadastrar-container">
+
+            <form>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="seu@email.com" required>
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="********" required>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+        <p id="mensagem-resposta"></p>
+    </main>
+
+    <footer>
+        <div>
+            <!-- Coluna da esquerda: Informações do Grupo -->
+            <section>
+                <h3>17° Grupo de Escoteiros Miraflores</h3>
+                <address>
+                    Av. Waldemar Tietz, 1154<br>
+                    São Paulo - SP
+                </address>
+                <p>Email: <a href="mailto:contato@escoteiros.com">contato@escoteiros.com</a></p>
+                <p>Telefone: <a href="tel:+5511999999999">(11) 99999-9999</a></p>
+            </section>
+
+            <!-- Coluna da direita: Redes sociais -->
+            <section>
+                <h4>Redes Sociais</h4>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <!-- Instagram -->
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.428.403a4.918 4.918 0 011.675 1.089 4.918 4.918 0 011.089 1.675c.163.458.349 1.258.403 2.428.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.403 2.428a4.918 4.918 0 01-1.089 1.675 4.918 4.918 0 01-1.675 1.089c-.458.163-1.258.349-2.428.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.428-.403a4.918 4.918 0 01-1.675-1.089 4.918 4.918 0 01-1.089-1.675c-.163-.458-.349-1.258-.403-2.428C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.054-1.17.24-1.97.403-2.428a4.918 4.918 0 011.089-1.675A4.918 4.918 0 015.4 2.636c.458-.163 1.258-.349 2.428-.403C8.416 2.175 8.796 2.163 12 2.163zm0 1.838c-3.178 0-3.555.012-4.808.07-1.046.05-1.613.217-1.987.362a3.092 3.092 0 00-1.123.724 3.092 3.092 0 00-.724 1.123c-.145.374-.312.941-.362 1.987-.058 1.253-.07 1.63-.07 4.808s.012 3.555.07 4.808c.05 1.046.217 1.613.362 1.987.167.39.401.73.724 1.123a3.092 3.092 0 001.123.724c.374.145.941.312 1.987.362 1.253.058 1.63.07 4.808.07s3.555-.012 4.808-.07c1.046-.05 1.613-.217 1.987-.362a3.092 3.092 0 001.123-.724 3.092 3.092 0 00.724-1.123c.145-.374.312-.941.362-1.987.058-1.253.07-1.63.07-4.808s-.012-3.555-.07-4.808c-.05-1.046-.217-1.613-.362-1.987a3.092 3.092 0 00-.724-1.123 3.092 3.092 0 00-1.123-.724c-.374-.145-.941-.312-1.987-.362-1.253-.058-1.63-.07-4.808-.07zm0 3.277a6.54 6.54 0 110 13.08 6.54 6.54 0 010-13.08zm0 1.838a4.702 4.702 0 100 9.404 4.702 4.702 0 000-9.404zm6.406-2.462a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" />
+                                </svg>
+                                Instagram
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <!-- Facebook -->
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.794.143v3.24l-1.918.001c-1.504 0-1.794.715-1.794 1.763v2.31h3.587l-.467 3.622h-3.12V24h6.116C23.407 24 24 23.407 24 22.675V1.325C24 .593 23.407 0 22.675 0z" />
+                                </svg>
+                                Facebook
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <!-- Twitter -->
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M23.954 4.569c-.885.392-1.83.656-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.564-2.005.974-3.127 1.195-.897-.959-2.178-1.555-3.594-1.555-2.717 0-4.924 2.207-4.924 4.924 0 .386.045.762.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.423.725-.666 1.562-.666 2.475 0 1.708.869 3.213 2.188 4.096-.807-.026-1.566-.247-2.229-.616v.062c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.317 0-.626-.03-.928-.086.627 1.956 2.445 3.379 4.6 3.419-1.68 1.317-3.809 2.104-6.102 2.104-.396 0-.788-.023-1.175-.069 2.179 1.397 4.768 2.212 7.548 2.212 9.057 0 14-7.496 14-13.986 0-.21-.005-.423-.014-.634.961-.694 1.8-1.562 2.46-2.549l-.047-.02z" />
+                                </svg>
+                                Twitter
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </footer>
+    <script src="Cadastro.js"></script>
+</body>
+
+</html>

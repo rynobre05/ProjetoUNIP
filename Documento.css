@@ -1,0 +1,166 @@
+/* Barra de navegação */
+nav {
+  background-color: #004aad; /* Azul base */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+gap: 20px; /* Espaço entre logo e links */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Logo */
+nav .logo {
+  height: 50px; /* Tamanho do logo */
+  width: auto;
+}
+
+/* Links */
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+/* Hover */
+.nav-links a:hover {
+  color: #ffdd00;
+  text-shadow: 0 0 6px rgba(255,221,0,0.7);
+}
+
+/* Botões de login/cadastro */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Botão de login */
+.btn-login {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-login:hover {
+    background: #fff;
+    color: #0047ab;
+}
+
+/* Botão de cadastro */
+.btn-register {
+    background: #ffd700; /* Amarelo */
+    color: #0047ab;
+}
+
+.btn-register:hover {
+    background: #e6c200;
+}
+
+.Titulo {
+  text-align: center;
+  font-size: 2rem;
+  color: #004aad;
+  margin: 40px 0 20px;
+  font-weight: bold;
+  position: relative;
+}
+
+.Titulo::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #ffdd00;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Estilo do Footer */
+footer {
+  background-color: #004aad; /* Azul base */
+  color: #fff;
+  padding: 30px 20px;
+  margin-top: 40px;
+  border-radius: 8px 8px 0 0; /* Bordas arredondadas no topo */
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.15);
+  font-family: Arial, sans-serif;
+}
+
+/* Div que organiza as duas colunas */
+footer > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+  max-width: 9000px;
+  margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+/* Seções dentro do footer */
+footer section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Títulos do footer */
+footer h3, footer h4 {
+  margin: 0;
+  color: #ffdd00; /* Destaque amarelo */
+}
+
+/* Endereço e textos */
+footer address, footer p {
+  font-style: normal;
+  line-height: 1.4;
+}
+
+/* Links de contato */
+footer a {
+  color: #ffdd00;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  text-shadow: 0 0 6px rgba(255,221,0,0.7);
+}
+
+/* Lista de redes sociais */
+footer nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Itens um abaixo do outro */
+  gap: 10px;
+}
+
+footer nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+footer svg {
+  fill: currentColor; /* Ícone herda a cor do link */
+}
+
+/* Responsividade: transforma em uma coluna em telas menores */
+@media (max-width: 768px) {
+  footer > div {
+    grid-template-columns: 1fr;
+  }
+  footer section:last-of-type {
+    grid-column: 1; /* Coloca a coluna da direita abaixo da esquerda */
+  }
+}       
